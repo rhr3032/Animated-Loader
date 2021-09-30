@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.master{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxA, .boxA{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    border: 15px solid white;
+}
+
+.boxA{
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    animation: animation1 1s linear infinite;
+}
+
+.boxB{
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    animation: animation2 1.2s linear infinite;
+}
+
+@keyframes animation1{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(180deg);}
+}
+
+@keyframes animation2{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(180deg);}
+}
+
+.dot{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50px;
+    animation: animation3 1.2s linear infinite;
+}
+
+@keyframes animation3{
+    0.100%{
+        transform: scale(0.4);
+        opacity: 0.2;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
